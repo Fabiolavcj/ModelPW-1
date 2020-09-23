@@ -1,0 +1,127 @@
+#menu-bar { 
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(11, 11, 11, 0.9);
+    transition: all 0.5s;
+    transform: translateX(100%);
+    margin-left: auto;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10 {
+    display: block;
+    color: aliceblue;
+    height: 30px;
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.menu a:hover { 
+    border-bottom-color: #17f01f;
+    background: rgba(21, 234, 62, 0.37);
+}
+
+.menu a1:hover { 
+    border-bottom-color: #c7f822;
+    background: rgba(209, 234, 21, 0.37);
+}
+
+.menu a2:hover { 
+    border-bottom-color: #f89d22;
+    background: rgba(234, 160, 21, 0.37);
+}
+
+.menu a3:hover { 
+    border-bottom-color: #f83222;
+    background: rgba(234, 21, 21, 0.37);
+}
+
+.menu a4:hover { 
+    border-bottom-color: #22f88d;
+    background: rgba(21, 234, 87, 0.37);
+}
+
+.menu a5:hover { 
+    border-bottom-color: #070506;
+    background: rgba(94, 95, 91, 0.37);
+}
+
+.menu a6:hover { 
+    border-bottom-color: #fff500;
+    background: rgba(229, 73, 27, 0.37);
+}
+
+.menu a7:hover { 
+    border-bottom-color: #007efc;
+    background: rgba(78, 21, 234, 0.37);
+}
+
+.menu a8:hover { 
+    border-bottom-color: #3a7e40;
+    background: rgba(128, 128, 128, 0.37);
+}
+
+.menu a9:hover { 
+    border-bottom-color: #550558;
+    background: rgba(203, 26, 182, 0.37);
+}
+
+.menu a10:hover { 
+    border-bottom-color: #0f2a00;
+    background: rgba(203, 203, 26, 0.37);
+}
+
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%)
+}
+
+@media (min-width:1024px) {
+    .menu {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        height: 100%;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menu a,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10 {
+        border: none;
+        display: block;
+        height: 50px;
+        border-bottom: 2px solid rgba(255,255,255,0.5);
+    }
+    
+   header label {
+        display: none;
+    }
+    
+    header ul {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+
+
+

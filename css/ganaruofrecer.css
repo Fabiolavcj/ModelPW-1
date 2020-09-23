@@ -1,0 +1,54 @@
+#ganaruofrecer {
+    background: #171515;
+    color: #ffffff;
+}
+
+#ganaruofrecer h2 {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+#ganaruofrecer h3 {
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+}
+
+#ganaruofrecer .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#ganaruofrecer a {
+    display: block;
+    color: #ffffff;
+    height: 200px;
+    width: 280px;
+    text-decoration: none;
+    text-align: center;
+    padding: 40px;
+    font-size: 90px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+#ganaruofrecer a:hover {
+    background: rgba(0, 252, 48, 0.5);
+}
+
+#ganaruofrecer a1:hover {
+    background: rgba(0, 252, 48, 0.5);
+}
+
+@media (min-width:1024px) {
+    
+    #ganaruofrecer h3 {
+    text-align: center;
+    width: 280px;
+    padding: 20px;
+    margin: 20px;
+    }
+}
